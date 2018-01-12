@@ -24,6 +24,3 @@ animate.css](http://daneden.me/animate
 
 jQuery Waypoint](https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
-Demo Images:
-http://unsplash.com
-
