@@ -1,7 +1,7 @@
 # CREDITS:
 
 Bootstrap
-[http://getbootstrap.com/]()
+[Bootstrap](http://getbootstrap.com/)
 
 jQuery
 http://jquery.com/
