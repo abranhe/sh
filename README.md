@@ -18,7 +18,7 @@ Google Fonts](https://www.google.com/fonts/)
 
 Icomoon](https://icomoon.io/app/)
 
-Respond JS](https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
+Respond JS](https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT)
 
 animate.css](http://daneden.me/animate
 
