@@ -8,8 +8,7 @@ jQuery Easing](http://gsgd.co.uk/sandbox/jquery/easing/
 
 Modernizr](http://modernizr.com/
 
-Google Map
-https://map.google.com/
+Google Map](https://map.google.com/
 
 jQuery Cookie
 https://github.com/carhartl/jquery-cookie
