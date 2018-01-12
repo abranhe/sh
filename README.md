@@ -14,7 +14,7 @@ jQuery Cookie](https://github.com/carhartl/jquery-cookie)
 
 Viewport-Units-Buggyfill](https://github.com/rodneyrehm/viewport-units-buggyfill/)
 
-Google Fonts](https://www.google.com/fonts/
+Google Fonts](https://www.google.com/fonts/)
 
 Icomoon](https://icomoon.io/app/
 
