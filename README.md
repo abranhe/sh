@@ -10,7 +10,7 @@
 
 [Google Map](https://map.google.com/
 
-jQuery Cookie](https://github.com/carhartl/jquery-cookie)
+[jQuery Cookie](https://github.com/carhartl/jquery-cookie)
 
 Viewport-Units-Buggyfill](https://github.com/rodneyrehm/viewport-units-buggyfill/)
 
