@@ -8,7 +8,7 @@
 
 [Modernizr](http://modernizr.com/)
 
-[Google Map](https://map.google.com/
+[Google Map](https://map.google.com/)
 
 [jQuery Cookie](https://github.com/carhartl/jquery-cookie)
 
