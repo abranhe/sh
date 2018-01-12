@@ -1,6 +1,5 @@
 # CREDITS:
 
-Bootstrap
 [Bootstrap](http://getbootstrap.com/)
 
 jQuery
