@@ -12,7 +12,7 @@ Google Map](https://map.google.com/
 
 jQuery Cookie](https://github.com/carhartl/jquery-cookie)
 
-Viewport-Units-Buggyfill](https://github.com/rodneyrehm/viewport-units-buggyfill/
+Viewport-Units-Buggyfill](https://github.com/rodneyrehm/viewport-units-buggyfill/)
 
 Google Fonts](https://www.google.com/fonts/
 
