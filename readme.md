@@ -6,7 +6,7 @@ Example installing the [os](https://github.com/abranhe/os) project.
 $ curl https://sh.abranhe.now.sh/os -sSf | sh
 ```
 
-![](https://cdn.abranhe.com/projects/sh/example.gif)
+![example](https://cdn.abranhe.com/projects/sh/example.gif)
 
 ## License
 
