@@ -1,11 +1,14 @@
 {
-  "version": 2,
   "name": "sh",
+  "version": 2,
   "builds": [
-    { "src": "**/*.js", "use": "@now/node" },
-    { "src": "index.html", "use": "@now/static" },
-    { "src": "app.css", "use": "@now/static" },
-    { "src": "vendor.css", "use": "@now/static" },
-    { "src": "fonts.css", "use": "@now/static" }
+    {
+      "src": "**/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "assets/**",
+      "use": "@now/static"
+    }
   ]
 }

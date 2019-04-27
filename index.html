@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type"
-      content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>Install - @abranhe Projects</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -18,24 +19,24 @@
 
     <!-- Facebook OpenGraph -->
     <meta property="og:title" content="Install - @abranhe's projects">
-    <meta property="og:description" content="Installation website for
-      @abranhe's projects.">
+    <meta property="og:description" content="Installation website for @abranhe's
+      projects.">
     <meta property="og:image" content="">
     <!-- <meta name="twitter:image" content=""> @TODO -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
 
     <!-- styles -->
-    <link rel="stylesheet" href="vendor.css">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="assets/app.css">
 
     <!-- favicon -->
     <link rel="shortcut icon"
       href="https://cdn.abranhe.com/abraham/abraham.ico">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
-    
+
   </head>
   <body data-gr-c-s-loaded="true">
     <nav class="flex flex-row justify-center justify-end-l items-center
@@ -59,22 +60,9 @@
         <li class="tc pv2 ph2 ph4-ns flex-20-s"><a
             href="https://instagram.com/abranhe">Instagram</a></li>
       </ul>
-
-      <div class="w-100 w-auto-l flex-none flex justify-center pv4 pv-0-l
-        languages">
-        <label for="language-nav" class="hidden">Language</label>
-        <select id="language-nav">
-          <option title="English (US)" value="en-US">English (en-US)</option>
-          <option title="French" value="fr">Français (fr)</option>
-          <option title="German" value="de">Deutsch (de)</option>
-
-        </select>
-      </div>
-
     </nav>
 
     <div id="main-content">
-
       <section id="rustup" class="green">
         <div class="w-100 mw-none ph3 mw8-m mw9-l center f3">
           <header>
@@ -86,11 +74,11 @@
               style="display: block;">
               <p>It looks like you’re running macOS, Linux, or another Unix-like
                 OS. To install a project, run the following in your terminal.</p>
-              <pre><code>curl https://sh.abranhe.com/{project} -sSf | sh</code></pre>
+              <pre><code>curl -s https://sh.abranhe.com/{project} | bash</code></pre>
               <p>
                 To uninstall any project, run the following in your terminal
               </p>
-              <pre><code>curl https://sh.abranhe.com/{project}/uninstall -sSf | sh</code></pre>
+              <pre><code>curl -s https://sh.abranhe.com/{project}/uninstall | bash</code></pre>
             </div>
             <div id="platform-instructions-win" class="instructions"
               style="display: none;">
@@ -111,11 +99,11 @@
                   in your terminal, where project is the desire install project
                   you'd like to install
                 </p>
-                <pre><code>curl https://sh.abranhe.com/{project} -sSf | sh</code></pre>
+                <pre><code>curl -s https://sh.abranhe.com/{project} | bash</code></pre>
                 <p>
                   To uninstall any project, run the following in your terminal
                 </p>
-                <pre><code>curl https://sh.abranhe.com/{project}/uninstall -sSf | sh</code></pre>
+                <pre><code>curl -s https://sh.abranhe.com/{project}/uninstall | bash</code></pre>
               </div>
               <div>
                 <p>
@@ -137,11 +125,11 @@
                   in your terminal, where project is the desire install project
                   you'd like to install
                 </p>
-                <pre><code>curl https://sh.abranhe.com/{project} -sSf | sh</code></pre>
+                <pre><code>curl -s https://sh.abranhe.com/{project} | bash</code></pre>
                 <p>
                   To uninstall any project, run the following in your terminal
                 </p>
-                <pre><code>curl https://sh.abranhe.com/{project}/uninstall -sSf | sh</code></pre>
+                <pre><code>curl -s https://sh.abranhe.com/{project}/uninstall | bash</code></pre>
               </div>
               <div>
                 <p>
@@ -178,193 +166,7 @@
           </div>
         </div>
       </section>
-      <script type="text/javascript">
-      var platform_override = null;
-
-function detect_platform() {
-    "use strict";
-
-    if (platform_override) {
-        return platform_override;
-    }
-
-    var os = "unknown";
-
-    if (navigator.platform == "Linux x86_64") {os = "unix";}
-    if (navigator.platform == "Linux i686") {os = "unix";}
-    if (navigator.platform == "Linux i686 on x86_64") {os = "unix";}
-    if (navigator.platform == "Linux aarch64") {os = "unix";}
-    if (navigator.platform == "Linux armv6l") {os = "unix";}
-    if (navigator.platform == "Linux armv7l") {os = "unix";}
-    if (navigator.platform == "Linux armv8l") {os = "unix";}
-    if (navigator.platform == "Linux ppc64") {os = "unix";}
-    if (navigator.platform == "Linux mips") {os = "unix";}
-    if (navigator.platform == "Linux mips64") {os = "unix";}
-    if (navigator.platform == "Mac") {os = "unix";}
-    if (navigator.platform == "Win32") {os = "win";}
-    if (navigator.platform == "FreeBSD x86_64") {os = "unix";}
-    if (navigator.platform == "FreeBSD amd64") {os = "unix";}
-    if (navigator.platform == "NetBSD x86_64") {os = "unix";}
-    if (navigator.platform == "NetBSD amd64") {os = "unix";}
-
-    // I wish I knew by now, but I don't. Try harder.
-    if (os == "unknown") {
-        if (navigator.appVersion.indexOf("Win")!=-1) {os = "win";}
-        if (navigator.appVersion.indexOf("Mac")!=-1) {os = "unix";}
-        if (navigator.appVersion.indexOf("FreeBSD")!=-1) {os = "unix";}
-    }
-    
-    // Firefox Quantum likes to hide platform and appVersion but oscpu works
-    if (navigator.oscpu) {
-        if (navigator.oscpu.indexOf("Windows")!=-1) {os = "win";}
-        if (navigator.oscpu.indexOf("Mac")!=-1) {os = "unix";}
-        if (navigator.oscpu.indexOf("Linux")!=-1) {os = "unix";}
-        if (navigator.oscpu.indexOf("FreeBSD")!=-1) {os = "unix";}
-        if (navigator.oscpu.indexOf("NetBSD")!=-1) {os = "unix";}
-    }
-
-    return os;
-}
-
-function adjust_for_platform() {
-    "use strict";
-
-    var platform = detect_platform();
-
-    var unix_div = document.getElementById("platform-instructions-unix");
-    var win_div = document.getElementById("platform-instructions-win");
-    var unknown_div = document.getElementById("platform-instructions-unknown");
-    var default_div = document.getElementById("platform-instructions-default");
-
-    unix_div.style.display = "none";
-    win_div.style.display = "none";
-    unknown_div.style.display = "none";
-    default_div.style.display = "none";
-
-    if (platform == "unix") {
-        unix_div.style.display = "block";
-    } else if (platform == "win") {
-        win_div.style.display = "block";
-    } else if (platform == "unknown") {
-        unknown_div.style.display = "block";
-    } else {
-        default_div.style.display = "block";
-    }
-
-    var platform_specific = document.getElementsByClassName("platform-specific");
-    for (var el of platform_specific) {
-        var el_is_not_win = el.className.indexOf("not-win") !== -1;
-        var el_is_inline = el.tagName.toLowerCase() == "span";
-        var el_visible_style = "block";
-        if (el_is_inline) {
-            el_visible_style = "inline";
-        }
-        if (platform == "win") {
-            if (el_is_not_win) {
-                el.style.display = "none";
-            } else {
-                el.style.display = el_visible_style;
-            }
-        } else {
-            if (el_is_not_win) {
-                el.style.display = el_visible_style;
-            } else {
-                el.style.display = "none";
-            }
-        }
-    }
-}
-
-function cycle_platform() {
-    if (platform_override == null) {
-        platform_override = "default";
-    } else if (platform_override == "default") {
-        platform_override = "unknown";
-    } else if (platform_override == "unknown") {
-        platform_override = "win";
-    } else if (platform_override == "win") {
-        platform_override = "unix";
-    } else if (platform_override == "unix") {
-        platform_override = "default";
-    }
-    adjust_for_platform();
-}
-
-function set_up_cycle_button() {
-    var cycle_button = document.getElementById("platform-button");
-    if (cycle_button !== null) {
-        cycle_button.onclick = cycle_platform;
-    }
-
-    var key="test";
-    var idx=0;
-    var unlocked=false;
-
-    document.onkeypress = function(event) {
-        if (event.key == "n" && unlocked) {
-            cycle_platform();
-        }
-
-        if (event.key == key[idx]) {
-            idx += 1;
-
-            if (idx == key.length) {
-                if (cycle_button !== null) {
-                    cycle_button.style.display = "block";
-                }
-                unlocked = true;
-                cycle_platform();
-            }
-        } else if (event.key == key[0]) {
-            idx = 1;
-        } else {
-            idx = 0;
-        }
-    };
-}
-
-function fill_in_bug_report_values() {
-    var nav_plat = document.getElementById("nav-plat");
-    var nav_app = document.getElementById("nav-app");
-    nav_plat.textContent = navigator.platform;
-    nav_app.textContent = navigator.appVersion;
-}
-
-var override_map = new Map ([
-    ["unix", "unix"],
-    ["win", "win"],
-    ["linux", "unix"],
-    ["win32", "win"],
-    ["win64", "win"],
-    ["windows", "win"],
-    ["wsl", "win"],
-    ["default", "default"],
-    ["generic", "default"],
-    ["all", "default"],
-]);
-
-function check_initial_override() {
-    var urlParams = new URLSearchParams(location.search);
-    if (urlParams.has('platform_override')) {
-        var override = urlParams.get('platform_override').toLowerCase();
-        // Now normalise in case people pass unusual things in
-        override = override_map.get(override);
-        if (override === undefined) {
-            platform_override = "unknown";
-        } else {
-            platform_override = override;
-        }
-    }
-}
-
-(function () {
-    check_initial_override();
-    adjust_for_platform();
-    set_up_cycle_button();
-    fill_in_bug_report_values();
-}());
-
-    </script>
+      <script src="assets/index.js"></script>
     </div>
   </body>
 </html>
