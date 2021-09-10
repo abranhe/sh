@@ -3,7 +3,7 @@
 Example installing the [os](https://github.com/abranhe/os) project.
 
 ```
-$ curl -s https://sh.abranhe.now.sh/os | sh
+$ curl -s https://sh.abranhe.com/os | sh
 ```
 
 ![example](https://cdn.abranhe.com/projects/sh/example.gif)
